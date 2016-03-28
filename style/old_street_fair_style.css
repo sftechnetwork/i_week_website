@@ -1,0 +1,238 @@
+#layout{
+	width: 100%;
+	height: 1850px;  /*1900 */
+	border-color: white; 
+	background-color: white;
+    position:absolute;
+    top: 0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+
+}
+
+#page{
+	width: 1000px;
+	height: 100%;
+	border-style: solid;
+	border-width: 0px;
+	margin: auto;
+}
+
+
+#pic{
+    	width: 100%;
+    	height: 666px;
+    	background-size: 100% 100%;
+    	background-image: url('../pics/i_week2.jpg');	
+}
+
+#header_box{
+	width: 100%;
+	height: 200px;
+	border-width: 0px;
+	border-style: solid;
+}
+
+#header{
+	border-width: 0px;
+	border-style: solid;
+
+	
+	height: 100px;
+	float: right;
+    font-family: 'Poiret One', cursive;
+  	font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;  
+}
+
+#header a{  /* a applies for both visited and not visited */  
+	text-decoration: none;
+    position: relative;
+    color: #e9e9e9;
+	
+	
+}
+
+#header a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid #e9e9e9;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+
+}
+
+#header a:hover:after {
+  width: 100%;
+}
+
+
+
+#title_box{
+  width: 100%;
+  height: 120px;
+  border-width: 0px;
+  border-style: solid;
+  margin-top: 40px;
+}
+
+
+#title_content{
+  text-align: center;
+  color: white;
+  font-family: 'Lora', serif;
+    font-size: 40px;
+}
+
+#title_content_about{
+  text-align: center;
+  color: white;
+  
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+
+
+
+
+
+
+#social_media{
+  width: 100%;
+  height: 100%;
+
+}
+
+#social_media_content{
+    float: right;
+    color: white; /*facebook logo can be colored */ 
+    margin-top: 260px;
+    margin-right: 20px;
+}
+ 
+#social_media_content a:link{
+    text-decoration: none;
+    color: white;
+}
+
+#social_media_content a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+#social_media_content a:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+#second_box{
+  width: 100%;
+  height: 250px;
+  border-width: 0px;
+  border-style: solid;
+}
+
+#second_box_title{
+  text-align: center;
+  font-size: 28px;
+  color: #2d3f81;
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+
+#second_box_content{
+
+
+  border-style: solid;
+  border-width: 0px;
+  height: 150px;
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
+  
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+
+}
+
+#third_box{
+  width: 100%;
+  height: 700px;
+  border-width: 0px;
+  border-style: solid;
+  text-align: center;
+}
+
+#fourth_box{
+  width: 100%;
+  height: 150px;
+  border-width: 0px;
+  border-style: solid;
+}
+
+#fourth_box_content{
+  border-style: solid;
+  border-width: 0px;
+  height: 100px;
+  width: 600px;
+  margin: auto;
+  text-align: center;
+
+  font-size: 16px;
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  margin: auto;
+
+}
+
+#footer{
+  width: 100%;
+  height: 120px;
+  background-color: rgb(44, 46, 49);
+  border-width: 0px;
+  border-style: solid;
+
+}
+
+#footer_title{
+  border-width: 0px;
+  border-style: solid;
+  text-align: center;
+  color: rgb(136, 143, 145);
+}
+
+#links{
+  text-align: center;
+
+}
+
+
+#links a{
+  color: rgb(221, 221, 221);
+  text-decoration: none;
+
+}
+
+#links a:hover{
+  text-decoration: underline;
+}

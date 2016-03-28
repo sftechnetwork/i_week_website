@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script scr="https://code.jquery.com/jquery-1.11.3.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./style/index_style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./font_awesome/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+	<title> Internatioanl Week</title>
+
+<script type="text/javascript">
+	window.onload = function(){						//Run HTML, CSS code first then JS
+
+	//Set variables
+	var slider = document.getElementsByClassName('slider')[0];   //getting all elements that have a class of slider with the first element, [0], of img
+	var images = slider.getElementsByTagName('img');  //now [0] will have the first image, [1] will have the second, etc
+	var counter = 0;
+	var nextBtn = slider.getElementsByClassName('next')[0];
+	var prevBtn = slider.getElementsByClassName('prev')[0];
+
+
+  	function showImage (counter){
+    	for (var i = 0; i < images.length; i += 1) {    //images.length the # of pics we have
+      		images[i].className = 'hideImage';   //  the first, second, third, etc image will be hidden
+    	}
+
+    	images[counter].className = 'showImage';  //image[0] which is the first image will have the css showImage
+  	}
+
+
+
+  	//When the next button is press run this code.
+  	//check counter variable is not bigger that the amount of images we have, we check when we reach the last image 
+ 	function nextImg () {
+    	// counter variable gets the current img selected
+    	// if we have the last img, we switch back to the first one again
+    
+    	if (counter < images.length -1) {
+      		counter += 1;
+    	} else {
+      		counter = 0;
+    	}
+ 
+    	showImage(counter); //will run the next image
+  	}
+
+	function prevImg () {
+  		// counter variable gets the current img selected
+  		// if we have the first img, we switch back to the last one again
+    
+  		if (counter > 0) {
+    		counter -= 1;
+  		} else {
+    		counter = images.length - 1; //number of images starting from array [0],[1],[2],etc.
+  		}
+ 
+  		showImage(counter); //will run the previous image
+	}
+
+
+	//  If you want to have an auto-slider, uncomment this: 
+	//  window.setInterval(prevImg, 2000);   according to research don't use auto-sliders
+  
+  	// give the buttons an onclick event
+  	nextBtn.onclick = nextImg;
+  	prevBtn.onclick = prevImg;
+
+  	showImage(counter); //will automattically show the first image of the sequence
+
+
+
+};
+
+
+</script>
+
+
+
+
+</head>
+<body>
+	<div id = "layout">
+		<div id = "page">
+			<div id = "pic">
+				<div id = "header_box">
+					<div id = "header">
+						<a href="./index.html">Home</a> &nbsp;
+						<a href="./events.html">Events</a> &nbsp;
+						<a href="./street_fair.html">Street-Fair</a> &nbsp;
+						<a href="./i_week_sponsors.html">Sponsors</a>
+					</div> <!--end header -->
+
+				</div> <!-- end header_box -->
+
+
+				<div id = "title_box">
+					<div id="title_content">
+						 International Week
+					</div>
+					<div id="title_content_about">
+						April 10th - 16th, 2016
+					</div>
+				</div> <!-- end title_box -->
+
+
+				<div id="social_media">
+					<div id = "social_media_content">
+
+						<a target="_blank" href="https://www.facebook.com/OU.International.Week/">
+						<i class="fa fa-facebook fa-2x"></i>
+						</a> &nbsp; &nbsp;
+
+						<a target="_blank" href="https://twitter.com/ohioiweek">
+						<i class="fa fa-twitter fa-2x"></i>
+						</a> &nbsp; &nbsp;
+						<a target="_blank" href="https://www.instagram.com/ohioiweek/">
+						<i class="fa fa-instagram fa-2x"></i></a>
+					</div>
+				</div> <!-- end social_media -->
+			</div> <!-- end pic -->
+
+
+
+			<div id = "second_box"><br>
+
+				<a href="https://www.ohio.edu/orgs/isu/logo.html"><img src="./pics/isu.png" width="160" height="180"></a>&nbsp; &nbsp; &nbsp; &nbsp;
+
+				<a href="https://www.ohio.edu/">
+				<img src="./pics/ou.jpg" width="200" height="80"></a>&nbsp; &nbsp; &nbsp; &nbsp;
+
+				<a href="https://www.ohio.edu/studentsenate/"><img src="./pics/sac.png" width="150" height="150"> </a>
+
+			</div> <!-- end second_box -->
+
+			<div id="slider_box"> <br>
+
+				<div class="wrapper">
+		
+
+
+					<div class = "slider">
+						<!-- include images that will be used -->
+						<img src="./pics/image1.jpg" >
+						<img src="./pics/image2.jpg" >
+						<img src="./pics/image3.jpg" >
+						<img src="./pics/image4.jpg" >
+						<img src="./pics/image5.jpg" >
+						<img src="./pics/image6.jpg"  >
+						<img src="./pics/image7.jpg" >
+						<img src="./pics/image8.jpg" >
+						<img src="./pics/image9.jpg" >
+						<img src="./pics/image10.jpg" >
+
+
+						<!-- Symbols -->
+						<button class="prev">&#60;</button> 
+    					<button class="next">&#62;</button>
+
+					</div> <!-- end slider -->
+				</div> <!-- end wrapper -->
+
+
+
+
+
+
+
+
+
+			</div> <!-- end slider -->
+
+
+
+
+			<div id="third_box"> <br><br><br><br><br>
+				<div id="third_box_title"> 
+					What is International Week? 
+				</div>
+
+				<div id="third_box_content"> <br><br>
+				International Week has been celebrated at Ohio University as early as 1969, becoming an  annual week-long celebration in 1979. <br> <br>
+
+				 One of the most popular events of I Week is the International Street Fair, celebrated on Court Street since 1982 in conjunction with the City of Athens. <br> <br>
+
+				 The International Student Union (ISU) funds, programs, and carries out many of the week's events and plays an integral role in event success. This year, I Week will be <b>April 10-16, 2016</b>. <br><br>
+
+				 We are looking forward to an exciting week of events that will engage and facilitate international awareness and diversity. <br> <br>
+
+
+
+				</div>
+			</div>  <!-- end third_box -->
+
+			<div id= "footer"> <br>
+				<div id="footer_title"> 
+					Designed by Miguel Gomez <br>
+					Ohio Univeristy | Athens, OH 45701 | 740.593.1000 <br>
+
+
+
+					&#169; 2016 Ohio University. All rights reserved
+				</div>
+
+				<div id="links">
+						<a href="./index.html">Home</a> &nbsp;
+						<a href="./events.html">Events</a> &nbsp;
+						<a href="./street_fair.html">Street-Fair</a> &nbsp;
+						<a href="./sponsors.html">Sponsors</a>
+				</div>
+
+
+			</div> <!-- end footer -->
+
+
+
+		</div> <!-- end page -->
+	</div> <!-- end page -->
+
+
+
+
+
+</body>
+</html>
